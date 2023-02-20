@@ -1,0 +1,27 @@
+ALGORITHM yuki
+VAR
+    var arr1,var arr2 : INTEGER
+    var found :
+    var set :
+    var Sum_comm,var Sum_dist ;INTEGER
+BEGIN
+    set= arr1.concat(arr2)
+for(var i in set ){
+    found=false;
+    write(false)
+    for(const j in set){
+        write("index of " + i + " with value of " + set[i] + ", index of " + j + " with value of " + set[j])
+        if(set[i]= set[j] && i !=j){
+            found=true;
+            write(i + " is index of i " + j + " is index of j ")
+            write(set[i]== set[j] && i !=j)
+            Sum_comm += set[i]
+        }
+    }
+    if(found = false){
+        Sum_dist += set[i] 
+    }
+}
+write("sum of common numbers are ",Sum_comm)
+write("sum of distinct numbers are ",Sum_dist)
+END
